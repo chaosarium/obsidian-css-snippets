@@ -1,0 +1,64 @@
+/* remove the "#"s and add small, muted "H1", "H2", etc. to the left of headings in edit mode */
+
+span.cm-formatting.cm-formatting-header-2 {
+  font-size: 0.7em !important; 
+}
+span.cm-formatting.cm-formatting-header-3 {
+  font-size: 0.55em !important; 
+}
+span.cm-formatting.cm-formatting-header-4 {
+  font-size: 0.45em !important; 
+}
+span.cm-formatting.cm-formatting-header-5 {
+  font-size: 0.4em !important; 
+}
+span.cm-formatting.cm-formatting-header-6 { 
+  font-size: 0.4rem !important; 
+}
+
+.HyperMD-header.cm-line::before {
+  color: var(--text-faint);
+  font-weight: 400;
+  font-size: 0.7rem;
+  left: -3.6em;
+  /*letter-spacing: 0.2px;*/
+  position: absolute;
+  opacity: 0.8;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.HyperMD-header.HyperMD-header-1.cm-line::before {
+  content: "H1";
+  /* color: var(--red); */
+}
+.HyperMD-header.HyperMD-header-2.cm-line::before {
+  content: "H2";
+  /* color: var(--orange); */
+}
+.HyperMD-header.HyperMD-header-3.cm-line::before {
+  content: "H3";
+  /* color: var(--yellow); */
+}
+.HyperMD-header.HyperMD-header-4.cm-line::before {
+  content: "H4";
+  /* color: var(--green); */
+}
+.HyperMD-header.HyperMD-header-5.cm-line::before {
+  content: "H5";
+  /* color: var(--blue); */
+}
+.HyperMD-header.HyperMD-header-6.cm-line::before {
+  content: "H6";
+  /* color: var(--purple); */
+}
+
+.HyperMD-header.HyperMD-header-6.cm-line {
+  padding-bottom: 0.4em;
+}
+
+    
+
+
+
+
