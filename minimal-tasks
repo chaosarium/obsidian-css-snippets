@@ -1,0 +1,194 @@
+/*! 
+Included icons were modified from https://lucide.dev
+License reproduced from https://lucide.dev/license
+
+ISC License
+Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2022.
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+*/
+@font-face {
+    font-family: 'TasksMonoEmojis';
+    src: url('data:@file/octet-stream;base64,d09GMgABAAAAAA+kAAsAAAAAH0QAAA9UAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHINuBmAAh04KplygbQtSAAE2AiQDgSAEIAWEageCMBs8G6OinLEqJPsPB9yQiZ3BK7VRD2GcRlC6Md08PYDCcvV9gBe8Xh8PYCn4s3QSMeNEEIxABgKeNhH7V6QjJJm1B73+f060u0kWCv1EdoQrqftgJZYwq3sxtx/mkSOJJo0kEckT0YbXTMh0IgTUpfufCtgaQceIdIppzCPwE6BaL5r8hyYkGt4fJBJClMhwMlsZAA7mUqWE7YQNRbpeAfCgAzKE+Irsj7WxtLEvBOQxSPb4i+++RsPjtv79ArMx5jmGvyhzwumAAUYi+MVIUhu8TbzrGT0jcpf4IxN/RSW+//9fa6/2XpOduUzOXJGDVxSOXZ3Dt7f56e7t/+mFP4T4AtQ2oIqgO5F1dYDqQwHAAYAuC9PxLFTHV1Z4XVVp+5DNI5vR6EIbjrW/d/k4UzqrnbEsFQ8V+4OJf5EggKij/pjhrE6QWh5ThhwOAAAE2/lpeRkMIksqS8680jyKDpM52pvt6qoXbVyjTHfjsahrS3gKlUbHEBgEBR5LQKVSmCJleR57WufzqHuoRLIkPL6AO20q4elCXeqhVzNEZuMYbM4EJY/nF+oyBPI9Lhu3IUflCdm56R9vSMF1FAH7ypHlGSkWThSmMi5HZGmtK1tIy7dUJrIUUyDloQM5XC5EDJIVmaH5eVzoLgrqKmq4UAVLgYCHcKpEzVRxNS5MWrUiL1fnR5I4oJhy7hBZE1dosCjw+UI4Ohf/Ep3GA9epzQEqmG+fXZvEAYDBp8DPYuJiTMLH+C83eCxf+S88BVHwCCy0reOAzrD4SpAk6sES9bSnrq2lgiWbg6OyOO3vw2v4DD9JkmbSrV0AzEEQ6MCkLkvIvcSyBpnOek7Y2wFCVt2STcLGV8RcNtPjkPwPOpCSFZWUVVTV1DWAsuAsZX8nNL1mlCiI67ZpOFALeoAUi5H1pC015ZmzhpDMA4vMB58sAI8shCZZBBFZDAlZAgpZBjFZDi5ZATZZCSZZBQZZDQ5ZCypZBxpZDzrZAAHZpKRaeFIha+FFRVELrypKWvhUUdbCj4qKliQqqlqaUVHT0pGKupauDGig13kjQOjznBEY9H3JCCz6vmUEDn0/NgKPAhkBAQXVCORQ6G0E8ij0NQIFFPoZARH9ftRB0oFMByYqvVRhqOYTxrR7mvIYLA4k2YJomIDDSF6kM2jp+enpJad9o7cTGWLazWJYkKYqB7Y3eRir2kmOTxEqsnxmd9bnovJj4kI6qFEZ0Ag6GdY8R3Oe0V3X9n1FZazv0wql/GVGGKzEJ9JknKimMQ7SnLuRSK4I28GThWExDJiCZQzlcLtUzi9wbU+PeeYYmK0Ev1DZK67qFALWGhUtBXN9OCRVw0hU09OhRvCkgwR1teUeF6It8+vGOaN9VBBurRnd9T6HfePaAUdzOKy8v69VsCrBlnPEhpFuDFVqkJ1m0xvRPzrYIVfUwFh0txW/cvRL9mFwEM3jWQDZRPWMKAUyxqcS14WxyHHu8iDwbJhoYn0GcwA1iOx7KXgeRqdHmbP3clD8zpOORhtCVHA6ePIrXyv5dd/fCmApsZ2AKJzCi7UvPX3kf8wlz7CDnYVvhjAZI66LHMfQTpc+fteqFDIq68RwG88XkwrZQAjqxWTbbnfGdwuy76i6JSia3uMyT9fCKnAlW2k4KWJJyFQis9iWGQbNMA/DY5GYSOxzJscl11zEMppJNS+8mve3zoJbiC14Inesd1PsGFhql6BTaJn5YGFfcOr0B/6PjlZUyPp37qOODn1c6cTzyItDMA0z4hadaz6nVzFBlHWH1o2qGic/XPTuqQ192LIE5WtqsW/jPqX3kDlzwxaftDBwu1RWEhIPMdPpKe0yN1itGZO9P3nDIW1iaSh4yns3lnVnjSo6QrPKIJWuqDWriLXWZ/IkbNc5Mu/7kGZ2Bj5W3J0jXniHvvN3mQZdrCRZsdJXbQWrqkts4xPVJsYTzuRlklCRmnkSd3v8E+omuoQb8Q7c6tw3GYClzbIeIfq2vndUwwLXttRIwY4DY1EWmk8ljAEpvY9no5jrhC3+HJrncpLwPLL5ZDJnzpbgdqkbeXWtG9nEUxquMiuFEqu1uFabXwirzb6xolFtIymdpifcxpMOWa8SXldXt9SU9KCNWnWOctw3mwAQdqAg8c20KxUwt0r0U3a/G28I0pzhQb2n8dk0Fcq4wrWylGq62QSIbL49upxNRI7DNWmL9++5cYt+bsppy4i3oqFeyuvW2MzVLqOcCfVl3kEWlFfDUrO5JBtIRbAwXGEchYdEbRsa/Hid43M46D3qaSoyUMCnLI9MXJaH2yWpZ6p3JCVuVp1CPWgebygpIy6ntITMnFBpIWcaSf1VCk1TEdkteQ3vd31zOTSf5efIg5Hb1utwPrl6VTKROpI0jCuZ/PDzN/uMpiZiwAW3HBUUNPHEh1+82XsU5SgGSdVaystJgZ3/9zAuKbjzTgHJt/+NgEsWKRTYwvL+UkqFBL/9n/amsDN1Q/ZZ4JH45qxFL6+tOT49cHf7eS2ZG7VBXleDLTxpQcKWeOTvX/5v65XEgSWDxnSC+4DlPeaLrx58OentqNaQMx92UY7Fqbxv3u71fKNK+5a8eIVm26es2DeQmr/cC1Z3e8ZTdb1BtugKvvD/R3qZB6FIxCNhitAfHl8j8y8O0Zo0ge//YH/88I4vguM9AjNBL2esOplwMl4eCrLWrRaFFJuLwE/9+eFF39mt3f5E+/74aNyOUd+NbPWcRzNWX5/gFD2GBgqbPqWGTBgBqS9EVWZqS0trU1NqpV8cytNrUwKC6ww5R47RdCbCzrwQYwjsdaMhEjq840AhrJv8AiqDKJKCCNAdYgsjRZ/9O/LgTrNJZ2kfzKDy1sa7xaTA5nTaBKSIvbGTXXDFKbSJyO7x3LUMqn1QZ2k23ZEp+deZOwLazpsqED08MMDVIxXmCQOTT/UMl5TVaci+payx86iTPWEWbViv4g28FZS1rponR35d20NkiwMG/uumYVGGYNwLXLC2886jwuV5BVqeV3DuDNzHAhTceudkwFMpDmy6ts937+9gqy70Yzv/d3N+wf0NHk/P3lmcDAAOHaJePDI0O8bk0dSlTvHaS8DvA3+FqSnX26pqNMZrWl8/hIUovO5MveMZ/eSAGcwdCfc99fxPa7Ka9f08ChnxWC5a2tXcUKqu0LlTF/mRqIXc1elROK1kLXzt6nX/5lGfUrKSqXVvE9/sPzKQZEqsC/r48Pens9Rmo6QyucPP7tXsWWMuDiXVphi87KM/4ViVHK8DhwmJ7ZELm/nHBd2ch7atoX3/eGe16a28PoQCR27fNhv9XnsqPqut6gaR7NcTA2/89XO/H/HbbS+9uvXmKHboXz0RoArKbLXScdSmo9OhRRlUG9oUFjZxGjhWjsGuSXFhdGtko1XagrsOP3s06kQm+ubxmvQ/2Z5RrVG/srQAs0/bPFslc+vGm5Tlv5wceOOvT4YvVXBm/b9tfbbM5QqsnghUBWa2WmiYhjscnTi6n4Y7Or/PX5ETA7YX3SvnGbE4QaxEGVRpNOCo1mBQojjT5fPzvGvgz+O8a50Kr891bt1GTNxihq2i9RjZf0HlbwXyJ4J9rF0CXdwvyPVnd7kQmB02xE9VVIa0QI37+gJ+Y8gy+8Tfi3z+/irigTfQ/YH/Y/dQubpjKXIohn2zXDwp/HsuhyoP0YDNMLs9fpPIvhyiz8g/RTzJLgcens/kHcwd1Pr4IC1QFtElEmfylWAzmCDVbzqMm5oeeJFzLEvW/MgPpwOssiz/z4+jrcOUJuuuPfDrakmJkDPv3f9OZqNwevpIfpJv2bfaqDNofp73jEdtKG+i/l6gfA2aKoaFmnEzuZIFhaD2iSPcrroDuZ7uu/NiZqj5GW3GTEejfLc+wFHl11/99depA/soHhXFzMTMMlGRTAPoVJwrn9Lhn/idoxlwBXfrIK+ScTxYIuH8oOuY1X1b3DGEoFoQK2yQaxwOxTf/jPTkoGccGrkBtiIt7S9kPYZ3OnIew1i6Ont6Mg1s4FlbrqZ2EiK784pdQIqJc10ElCpc/nyBARebW3rkLxQxXH00rMAqrA+knbu6H7zMaL8dZnR0/p7Qe/bxNDw+Qa9DlYeu0/vx/XtD7523q7LHHn6bJV4G1QVv1bNhZTMcBXmv/tX5vc2oWJPMFBt1uCIEdZS88UgXd6N0lqLf5X+9cGREuu0sfAbLyCPn1fmDGh/E+24ZfbPWMeekRz+sx4CLmT/lBVEqRHOBC6XBWetm1WsEBXx+oUDz2IABF9zyx3GFwiMU/tFgDA0uWmJm/CATVA0RGOlPwv8ekAlw7Yx0RPLG9wdePjouQwxFb7z/Su/jPVoDIydVC8l4/d1yzrsnkxXYt0lsEzidApuYZItvC+zOKzYhKaLAsxtFduGVK0K7iOjGijATWw9Cf+/lPuVpvlsfyKl0c3N21orw9NPdS0Gf72/371VYDNgzEY12lxaZ1LHDnpYRnqkahuKgd4aWDmySLrmp/sWS3uga97E7o6WT9/H6SXpj0U9AsrCK6NFYM1MLdv0PvElLwgoBicPP/IQIU8aG478S7CDCGuEIAIDQ/cQgLt7FtBXsbP4ncwD7HIAkpnmCAMLIir7ANG4klnuQXyQXZgU47izgfAGAH8+9Dfkh4P7N7fQc3632lT6Ik2K/BsdbLH2A1ObhA6BTMOnCI4ry3wgI3J2xJTwOZGe1vMjrJcP/RlydT5zMOQIDRheJpMUIVLwsqiNlcOMYOeU4VpkCHInjeJKuQpDIgDhRG+OPLanbwo/SBRDHcRbHKHkgWCBPCQ7IO3E8xV9xAicS40TTo7ojSaKd71Pfx1qRlbGk8Jzx0wiLEizq6HqVxMY6te8oXOjVr83X2UxnvUm/4cH8mLepeEz9QSyXntmzcGEqatrBCcYgjMPWFPLnY0yi4HEMBxSGRYTRcUsDVF9Q9Cg58fbJ66S9jniYStmPD2OiIKF6Lk8eq22MjqCbaN9CeuNI8oaHYSKFSI4ib7VY8CgIDDQs9rFnqq4OOli4R03OCyXLh09Dw7OYRQyxxBFPAuUoTwUSSSKZilSiMlVU1dQ1NClUGp3BZLE5XB5fIBSJJVKZVuF/fDJHedqpej/5qYiCywoo/9KiP61sKv+sgE7NE9Y5ukNKLO6/l+kEtVtWRP+FnV+mAqAISQrFIw9NBVohpUe/tZPpzVicVkBBt1L038FT0RNWjJ08QuPoDCaFjCBRiSi/8BYMQ8ByAgA=') format('woff2');
+    unicode-range: U+1F194, U+1F3C1, U+1F4C5, U+1F4CD, U+1F4DD, U+1F501, U+1F517, U+1F53A, U+1F53C, U+1F53D, U+1F6EB, U+23E9, U+23EB, U+23EC, U+23F0, U+23F3, U+26D4, U+2705, U+274C, U+2795;
+    /* 🆔, 🏁, 📅, 📍, 📝, 🔁, 🔗, 🔺, 🔼, 🔽, 🛫, ⏩, ⏫, ⏬, ⏰, ⏳, ⛔, ✅, ❌, ➕ */
+    /*! Generator: obsidian-tasks-custom-icons v1.0.4 https://github.com/obsidian-tasks-group/obsidian-tasks-custom-icons */
+}
+
+/* margin after checkboxes */
+span.tasks-list-text {
+    margin-left: 6px;
+}
+/* tags should be smaller */
+span.task-description a.tag {
+    font-size: 0.5em;
+    vertical-align: middle;
+}
+span.task-description {
+    margin-right:3px;
+}
+/* font and color and spacing */
+span.tasks-list-text,
+.cm-line:has(.task-list-label) [class^=cm-list-] {
+    font-family: 'TasksMonoEmojis', var(--font-text);
+}
+span.task-extras a.tasks-edit, span.task-extras a.tasks-postpone {
+    font-family: 'TasksMonoEmojis', var(--font-text);
+    color: var(--tx1, var(--text-normal));
+    margin-left: 3px;
+    
+}
+.plugin-tasks-query-result span.task-priority {
+    cursor: default !important;
+    opacity:0.6 !important;
+    margin-right: 3px;
+}
+.plugin-tasks-query-result :is(.task-recurring, .task-start, .task-scheduled, .task-done, .task-created, .task-due, .task-id, .task-dependsOn)::after {
+    opacity:0.6;
+}
+.tasks-edit, .tasks-postpone {
+    vertical-align: top !important;
+}
+a.tasks-edit::after, a.tasks-postpone::after {
+    opacity: 0.6 !important;
+}
+a.tasks-edit:hover::after, a.tasks-postpone:hover::after {
+    opacity: 1.0 !important;
+}
+
+/* the styles below are largely inspired by https://github.com/replete/obsidian-minimal-theme-css-snippets/blob/main/Tasks%20-%20Compact.css */
+
+
+/* priority indicator */
+.task-list-item[data-task-priority=highest] input[type=checkbox] {
+    box-shadow: 0px 0px 0px 0.2em rgba(var(--color-red-rgb), 0.5) !important;
+    border-color: var(--color-red) !important;
+}
+.task-list-item[data-task-priority=high] input[type=checkbox] {
+    box-shadow: 0px 0px 0px 0.2em rgba(var(--color-orange-rgb), 0.5) !important;
+    border-color: var(--color-orange) !important;
+}
+.task-list-item[data-task-priority=medium] input[type=checkbox] {
+    box-shadow: 0px 0px 0px 0.2em rgba(var(--color-yellow-rgb), 0.5) !important;
+    border-color: var(--color-yellow) !important;
+}
+.task-list-item[data-task-priority=low] {
+    opacity:0.6
+}
+/* .task-list-item[data-task-priority=low] .task-description {
+    opacity:0.6
+} */
+
+.task-list-item[data-task-priority=lowest]{
+    opacity:0.4
+}
+/* .task-list-item[data-task-priority=lowest] .task-description {
+    opacity:0.4
+} */
+
+
+/* Show dates hover */
+:is(.task-recurring, .task-start, .task-scheduled, .task-done, .task-created,.task-due, .task-id, .task-dependsOn) {
+    font-size: 1px;
+    letter-spacing: -1px;
+    color: transparent;
+    background-color: transparent;
+}
+:is(.task-recurring, .task-start, .task-scheduled,.task-done, .task-created, .task-priority,.task-due, .task-id, .task-dependsOn)::after {
+    letter-spacing: 0px;
+    font-size: var(--font-adaptive-normal, 1rem);
+    line-height: var(--line-height);
+    color: var(--tx1, var(--text-normal));
+    margin-left: 3px;
+}
+.task-recurring::after {
+    content: "🔁";
+}
+.task-start::after {
+    content: "🛫";
+}
+.task-scheduled::after {
+    content: "⏳";
+}
+.task-done::after {
+    content: "✅";
+}
+.task-created::after {
+    content: "➕";
+}
+.task-due::after {
+    content: "📅";
+}
+.task-id::after {
+    content: "🆔";
+}
+.task-dependsOn::after {
+    content: "⛔";
+}
+
+
+:is(.task-recurring, .task-start, .task-scheduled, .task-done, .task-created, .task-due,.task-due, .task-id, .task-dependsOn):hover::after, span.task-priority {
+    opacity:1;
+    cursor: crosshair;
+}
+:is(.task-recurring, .task-start, .task-scheduled, .task-done, .task-created, .task-due,.task-due, .task-id, .task-dependsOn):hover span {
+    position:absolute;
+    display:inline-block;
+    flex-grow:1;
+    letter-spacing: 0px;
+    font-size: var(--font-adaptive-small, 1rem);
+    line-height: var(--line-height, 24px);
+    color: var(--tx1, var(--text-normal));
+    background:var(--bg2, var(--background-primary));
+    border-radius:4px;
+    outline:1px solid var(--tx3, var(--text-faint));
+    margin-left:10px;
+    padding-left:3px;
+    /* padding-right:3px; */
+    min-width:6.4rem;
+    width: fit-content;
+    pointer-events:none;
+    z-index:1000;
+    /* box-shadow:2px 2px 3px var(--bg2, var(--background-primary)), 0 0 7px var(--bg2, var(--background-primary)); */
+    line-height:1.2em;
+    margin-top:1.8rem;
+    margin-left:2px;
+}
+
+/* File backlink */
+.plugin-tasks-query-result .tasks-backlink {
+    font-size: 0px;
+    letter-spacing: -1px;
+    color: transparent;
+    background-color: transparent;
+    width:1.5rem;
+    height: 1.5rem;
+    align-self:baseline;
+}
+.plugin-tasks-query-result .tasks-backlink::before {
+    content:'...';
+    font-size: var(--font-adaptive-normal, 1rem);
+    line-height: var(--line-height, 1rem);
+    color: var(--tx1, var(--text-faint));
+    /* transform: translateX(6px); */
+    display:inline-flex;
+    opacity:0.6;
+}
+.plugin-tasks-query-result .tasks-backlink:hover > a {
+    font-size: 0.5em;
+    vertical-align: middle;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.plugin-tasks-query-result .tasks-backlink:hover {
+    font-size: var(--font-adaptive-normal, 0.8rem);
+    line-height: var(--line-height, 1rem);
+    letter-spacing:0;
+    width:inherit;
+}
+.plugin-tasks-query-result .tasks-backlink:hover::before {
+    content:''
+}
+.plugin-tasks-query-result .tasks-backlink {
+    float:right;
+}
