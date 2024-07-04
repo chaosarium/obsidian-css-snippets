@@ -1,0 +1,49 @@
+/* Improve flashcard interface */
+
+/* make context quieter */
+#sr-context {
+  font-style: italic;
+  font-weight: 200;
+  color: var(--text-faint);
+  margin-top: 16px;
+}
+
+/* make text bigger */
+.div#sr-flashcard-view {
+  font-size: 2em !important;
+  text-align: center;
+}
+
+/* Make divider less harsh */
+#sr-hr-card-divide {
+  border: none !important;
+  border-top: 2px solid !important;
+  backdrop-filter: none !important;
+  border-color: var(--background-modifier-border) !important;
+}
+
+/* make text selectable for tts */
+#sr-flashcard-view {
+  user-select: text;
+}
+
+/* make space for counts */
+.tag-pane-tag-count.sr-deck-counts, .tag-pane-tag-count.tree-item-flair {
+  padding: 2px 4px;
+}
+
+/* space for folding arrows */
+.modal-content.sr-modal-content div.tree-item {
+  padding-left: 10px;
+}
+
+/* low key buttons */
+#sr-show-answer, #sr-hard-btn, #sr-good-btn, #sr-easy-btn {
+  background-color: var(--interactive-normal) !important;
+  color: var(--text-normal) !important;
+}
+
+/* expand hierarchy by default */
+#sr-flashcard-view .tree-item:first-of-type .tree-item-children {
+  display: block !important;
+}
