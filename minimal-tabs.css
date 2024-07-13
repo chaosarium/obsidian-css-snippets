@@ -1,0 +1,43 @@
+/* Make tabs with the Tabs plugin feel just like the tabs in Minimal */
+
+div.tab-container div.tab-contents {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tab-container .tab-nav {
+    height: var(--tab-height);
+    font-size: var(--tab-font-size);
+}
+.tab-container .tab-nav .tab-nav-button {
+    margin-right: 0;
+    opacity: 0;
+}
+.tab-container .tab-nav .tab-nav-button:hover {
+    opacity: 1;
+}
+
+.tab-container .tab-nav .tab-nav-item-wrapper .tab-nav-item {
+    border: 1px solid var(--tab-outline-color);
+    padding: 0 var(--size-4-1) 0 var(--size-4-2);
+    padding-inline-end: 3px;
+    padding-inline-start: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: var(--size-2-1);
+    height: 100%;
+    border-radius: var(--tab-radius);
+    overflow: hidden;
+    padding: 0 8px;
+    margin-right: var(--size-4-1);
+    color: var(--tab-text-color);
+    font-weight: normal;
+}
+
+.tab-container .tab-nav .tab-nav-item-wrapper .tab-nav-item.tab-nav-item.tab-nav-item-active {
+    color: var(--tab-text-color-active);
+    background-color: var(--tab-background);
+    border: 1px solid transparent;
+}
